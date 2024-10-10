@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documnet</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="color.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tools">
+            <h3>NARZĘDZIA:</h3>
+            <input type="radio" id="brush" name="tool" value="brush" checked>
+            <label for="brush">Pędzel</label>
+            
+            <input type="radio" id="pencil" name="tool" value="pencil">
+            <label for="pencil">Ołówek</label>
+             
+            <input type="radio" id="spray" name="tool" value="spray">
+            <label for="spray">Spray</label>
+            
+            <input type="radio" id="eraser" name="tool" value="eraser">
+            <label for="eraser">Gumka</label><br><br>
+
+            <h3>KOLORY:</h3>
+            <div class="color-container">
+                <input type="radio" id="white" name="color" value="white" class="colors">
+                <label for="white"><span class="color white"></span></label>
+                
+                <input type="radio" id="black" name="color" value="black" class="colors" checked>
+                <label for="black"><span class="color black"></span></label>
+                
+                <label for="color-picker">
+                    <input type="color" id="color-picker" name="color">
+                </label>
+            </div><br>
+            <h3>ROZMAIR:</h3>
+            <input type="range" id="size" name="size" min="5" max="50" value="10">
+            <br><br><br>
+            <!-- <h3>KSZTAŁTY:</h3>
+            <input type="radio" id="circle" name="tool" value="circle">
+            <label for="circle">Koło</label>
+            
+            <input type="radio" id="rectangle" name="tool" value="rectangle">
+            <label for="rectangle">Prostokąt</label>
+            
+            <input type="radio" id="triangle" name="tool" value="triangle">
+            <label for="triangle">Trójkąt</label><br><br> -->
+
+            <button id="undo">COFNIJ</button>
+            <button id="clear">WYCZYŚĆ</button>
+            <button id="save">ZAPISZ</button>
+            
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="canvas" width="1000" height="600"></canvas>
+        </div>
+    </div>
+
+</body>
+</html>
