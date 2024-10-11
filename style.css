@@ -147,6 +147,6 @@ button:hover {
 
 .cursor-preview {
     position: absolute;
-    pointer-events: none; /* Ignorowanie kliknięć */
+    pointer-events: none;
     z-index: 1000;
 }
